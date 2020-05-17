@@ -51,11 +51,11 @@
                         @else
                         {{--nuevos elementos al menu--}}
                         <li class="nav-item">
-                            <a class="nav-link" href="">Inicio</a>
+                            <a class="nav-link" href="{{route('home')}}">Inicio</a>
                         </li>
                         {{--nuevos elementos al menu--}}
                         <li class="nav-item">
-                            <a class="nav-link" href="">Subir imagen</a>
+                            <a class="nav-link" href="{{route('image.create')}}">Subir imagen</a>
                         </li>
                         <li>
                             @include('includes.avatar')
