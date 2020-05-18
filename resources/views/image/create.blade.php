@@ -11,7 +11,7 @@
                 <div class="card-header">Subir nueva imagen</div>
                 {{--contendor de la caja del formulario--}}
             <div class="card-body">
-                <form method="POST" action="" enctype="multipart/form-data">
+                <form method="POST" action="{{ route('image.save') }}" enctype="multipart/form-data">
                     @csrf
                     {{--campo para subir imagen--}}
                     <div class="form-group row">

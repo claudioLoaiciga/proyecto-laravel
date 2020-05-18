@@ -19,8 +19,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-
+//Usuario
 Route::get('/configuracion', 'UserController@config')->name('config');
 Route::post('/user/update', 'UserController@update')->name('user.update');
 Route::get('/user/avatar/{filename}', 'UserController@getImage')->name('user.avatar');
+//Imagen
 Route::get('/subir-image', 'ImageController@create')->name('image.create');
+Route::post('/image/save', 'ImageController@save')->name('image.save');
